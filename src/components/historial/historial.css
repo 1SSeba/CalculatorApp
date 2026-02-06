@@ -1,0 +1,121 @@
+/* ---- Historial ---- */
+.historial-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.historial-item {
+  padding: 10px 12px;
+  background: var(--input-bg);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: background 0.12s, transform 0.1s;
+  cursor: pointer;
+}
+
+.historial-item:hover {
+  background: var(--accent-muted);
+}
+
+.historial-item:active {
+  transform: scale(0.98);
+}
+
+.historial-item-main {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.historial-origen {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.historial-arrow {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+.historial-conversions {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.historial-item-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historial-date {
+  font-size: 9px;
+  color: var(--text-muted);
+}
+
+.historial-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.12s;
+  opacity: 0;
+}
+
+.historial-item:hover .historial-remove {
+  opacity: 1;
+}
+
+.historial-remove:hover {
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+}
+
+/* Clear button */
+.historial-clear-btn {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.historial-clear-btn:hover {
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+/* Empty state */
+.historial-empty {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--text-muted);
+}
+
+.historial-empty-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.historial-empty p {
+  font-size: 13px;
+}
