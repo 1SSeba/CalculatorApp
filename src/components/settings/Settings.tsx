@@ -23,7 +23,7 @@ export function Settings({ open, onClose }: SettingsProps) {
           <button className="settings-reset-btn" onClick={resetSettings}>
             Restablecer valores
           </button>
-          <span className="settings-version">v1.0.0</span>
+          <span className="settings-version">v0.1.0</span>
         </div>
       }
     >
